@@ -1,0 +1,543 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+
+body
+{
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #4d4d4d;
+    margin: 0;
+}
+#contenedor-encabezado
+{
+    position: relative;
+    display: block;
+}
+#contendeor-naranja
+{
+    position: relative;
+    display: block;
+    background-color: #ee8416;
+    border-bottom: 1px solid white;
+    height: 70px;
+}
+#contenedor-degradado
+{
+    position: relative;
+    display: block;
+    background-color: #fff;
+    background-image: -moz-linear-gradient(#e5e5e5, #fff);
+    background-image: -webkit-linear-gradient(#e5e5e5, #fff);
+    background-image: linear-gradient(#e5e5e5, #fff);
+    height: 75px;
+}
+#logo
+{
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    background-image: url("../imagenes/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 3px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-indent: 900px;
+    overflow: hidden;
+    -moz-box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+    -webkit-box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+    box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+    left: 50%;
+    margin-left: -500px;
+    -webkit-transfotm: translate(-50%, 0%);
+    -moz-transfotm: translate(-50%, 0%);
+    transfotm: translate(-50%, 0%);
+}
+#busqueda
+{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #4d4d4d;
+    font-weight: 300;
+    border: none;
+    padding: 5px 10px 6px;
+    margin-top: 25px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("../imagenes/lupa.png") no-repeat 430px center #fff;
+    outline: none;
+}
+#contenedor-perfil
+{
+    position: relative;
+    display: block;
+    height: 70px;
+    text-align: left;
+}
+#caja-perfiñ
+{
+    position: relative;
+    display: inline-block;
+    background-color: #4d4d4d;
+    height: 70px;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: visible;
+}
+#caja-perfiñ > *
+{
+    position: relative;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+#caja-perfiñ:hover
+{
+    background-color: #686868;
+}
+#nombre-perfil
+{
+    text-align: left;
+}
+#nombre-perfil > span
+{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-top: 15px;
+}
+#nombre-perfil > div
+{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 17px;
+    padding-right: 30px;
+    margin-right: 20px;
+    background: url("../imagenes/flecha-perfil.png") no-repeat right top;
+}
+#caja-perfiñ:hover #nombre-perfil > div
+{
+    background-position: bottom right;
+}
+#caja-perfiñ nav
+{
+    position: absolute;
+    display: block;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 7px 20px;
+    top: 54px;
+    z-index: 1;
+    right: 90px;
+    display: none;
+}
+#caja-perfiñ nav a
+{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+#caja-perfiñ nav a:last-child
+{
+    border-bottom: none;
+}
+#caja-perfiñ nav a:hover
+{
+    color: #666;
+}
+#caja-perfiñ:hover nav
+{
+    display: block;
+}
+#menu-principal
+{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+
+}
+#menu-principal span,
+#menu-principal > a
+{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#menu-principal:hover span,
+#menu-principal > a:hover
+{
+    color: white;
+    background-color: #73c728;
+}
+#menu-principal span
+{
+    padding-right: 25px;
+    background-image: url("../imagenes/flecha-menu-principal.png");
+    background-repeat: no-repeat;
+    background-position: 112px 10px;
+}
+#menu-principal:hover span
+{
+    background-position: 112px -14px;
+}
+h2
+{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ee8415;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ee8415;
+}
+h1
+{
+    position: relative;
+    display: block;
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 300;
+
+}
+#contenidos
+{
+    margin-top: 20px;
+}
+.fecha-publicacion
+{
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+#contenidos-principales img
+{
+    margin-bottom: 20px;
+}
+.mosaico-principal
+{
+    position: relative;
+    display: block;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 2px solid #73c728;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.mosaico-principal span
+{
+    position: relative;
+    display: block;
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.mosaico-principal div
+{
+    color: #4d4d4d;
+}
+.derecha
+{
+    text-align: right;
+}
+.mosaico-principal:hover
+{
+    border-color: #ee8415;
+}
+.entrada-reciente
+{
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 15px;
+    color: #4d4d4d;
+}
+#recientes .entrada-reciente:first-child
+{
+    padding-top: 0;
+}
+.entrada-reciente strong,
+.entrada-agenda strong
+{
+    font-weight: 500;
+    color: #4d4d4d;
+
+}
+.entrada-reciente div div,
+.entrada-agenda a
+{
+    display: inline;
+    color: #5a321e;
+    text-decoration: underline;
+}
+.entrada-reciente span
+{
+    display: block;
+    font-size: 11px;
+    margin-top: 20px;
+}
+#ver-mas
+{
+    position: relative;
+    display: block;
+    color: #999999;
+    background: url("../imagenes/flecha-ver-mas.png") no-repeat 180px 3px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+#recientes
+{
+    margin-bottom: 30px;
+}
+#chiste-del-dia p
+{
+    font-style: italic;
+}
+#agenda
+{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+.entrada-agenda
+{
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+.entrada-agenda div:first-child
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #ee8415;
+}
+#agenda .entrada-agenda:first-of-type
+{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: -15px;
+}
+#agenda .entrada-agenda:first-of-type div:first-child
+{
+    font-size: 18px;
+    color: white;
+    background-color: #ee8415;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#agenda .entrada-agenda:first-of-type div:last-child
+{
+    margin-top: 10px;
+}
+.entrada-agenda div:last-child
+{
+    margin-top: 7px;
+}
+h2 span
+{
+    font-size: 12px;
+    color: #5a321e;
+}
+#contenedor-pie,
+#contenedor-pie-secundario
+{
+    position: relative;
+    display: block;
+}
+#contenedor-pie
+{
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+#contenedor-pie-secundario
+{
+    background-color: #4d4d4d;
+    padding: 10px 0;
+    color: white;
+}
+#contenedor-pie a
+{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+#contenedor-pie span
+{
+    text-decoration: underline;
+    color: #5a321e;
+}
+#contenedor-pie .etiqueta
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    color: #4d4d4d;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+}
+#contenedor-pie .etiqueta:hover
+{
+    background-color: #4d4d4d;
+    color: #e5e5e5;
+}
+#contenedor-pie-secundario a
+{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+#contenedor-pie-secundario a:hover
+{
+    text-decoration: underline;
+}
+#menu-principal nav  /*submenu*/
+{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+#menu-principal nav > div
+{
+    position: absolute;
+    display: none;
+    background-color: #f5f5f5;
+    padding: 10px 10px 0;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+#menu-principal nav:hover > div
+{
+    display: block;
+}
+#menu-principal nav > div > div
+ {
+     position: relative;
+     display: block;
+     width: 460px;
+
+ }
+#menu-principal nav > div > div:first-of-type
+{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    height: 60px;
+}
+#menu-principal #mosaico-menu a
+{
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    text-indent: 70px;
+    overflow: hidden;
+    background-color: #ee8415;
+    background-image: url("../imagenes/mosaicos-novedades.png");
+    background-repeat: no-repeat;
+}
+#menu-principal #mosaico-menu a#m-recientes
+{
+    background-position: left top;
+}
+#menu-principal #mosaico-menu a#m-recientes:hover
+{
+    background-position: left bottom;
+}
+#menu-principal #mosaico-menu a#m-destacadas
+{
+    background-position: -60px top;
+}
+#menu-principal #mosaico-menu a#m-destacadas:hover
+{
+    background-position: -60px bottom;
+}
+#menu-principal #mosaico-menu a#m-agenda
+{
+    background-position: -120px top;
+}
+#menu-principal #mosaico-menu a#m-agenda:hover
+{
+    background-position: -120px bottom;
+}
+#menu-principal #mosaico-menu a#m-anuncios
+{
+    background-position: -180px top;
+}
+#menu-principal #mosaico-menu a#m-anuncios:hover
+{
+    background-position: -180px bottom;
+}
+#menu-principal #mosaico-menu a#m-articulos
+{
+    background-position: -242px top;
+}
+#menu-principal #mosaico-menu a#m-articulos:hover
+{
+    background-position: -242px bottom;
+}
+#menu-principal #mosaico-menu a#m-comunidad
+{
+    background-position: -303px top;
+}
+#menu-principal #mosaico-menu a#m-comunidad:hover
+{
+    background-position: -303px bottom;
+}
+
+#menu-principal #mosaico-menu a:last-child
+{
+    margin-right: 0;
+}
+#menu-principal #etiquetas-menu a
+{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #e5e5e5;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+#menu-principal #etiquetas-menu a:hover
+{
+    color: #e5e5e5;
+    background-color: #4d4d4d;
+}
+
